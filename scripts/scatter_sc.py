@@ -16,4 +16,7 @@ sns.scatterplot(data = breastcancer,
                x = "texture_mean", 
                 y = "radius_mean", 
                 hue = "diagnosis")
-plt.show()
+
+# Save to a folder (e.g., "plots")
+plt.savefig("plots/scatter_sc.png", dpi=300, bbox_inches='tight')
+plt.close()

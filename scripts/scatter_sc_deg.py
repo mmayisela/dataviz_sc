@@ -22,4 +22,7 @@ plt.axvline(x=-1, color='black', linestyle='--')
 plt.xlabel('log₂ Fold Change')
 plt.ylabel('–log₁₀ Adjusted P-value')
 plt.tight_layout()
-plt.show()
+
+# Save to a folder (e.g., "plots")
+plt.savefig("plots/scatter_sc_deg.png", dpi=300, bbox_inches='tight')
+plt.close()

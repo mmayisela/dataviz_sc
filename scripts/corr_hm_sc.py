@@ -26,5 +26,9 @@ plt.xticks(rotation=45, fontsize=8)
 plt.yticks(fontsize=8)
 plt.tight_layout()
 plt.title("Correlation Heatmap of Selected Features")
-plt.show()
+
+# Save to a folder (e.g., "plots")
+plt.savefig("plots/corr_hm_sc.png", dpi=300, bbox_inches='tight')
+plt.close()
+
 
